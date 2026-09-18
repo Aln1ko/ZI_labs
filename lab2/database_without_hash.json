@@ -1,0 +1,22 @@
+{
+    "ADMIN": {
+        "password_hash": "123",
+        "is_blocked": false,
+        "must_change_password": false
+    },
+    "ABC": {
+        "password_hash": "56",
+        "is_blocked": false,
+        "must_change_password": false
+    },
+    "kl": {
+        "password_hash": "789",
+        "is_blocked": false,
+        "must_change_password": false
+    },
+    "us": {
+        "password_hash": "777",
+        "is_blocked": false,
+        "must_change_password": true
+    }
+}

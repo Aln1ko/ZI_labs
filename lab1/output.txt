@@ -1,0 +1,7 @@
+client -> Hello from client!
+server -> Hello from server! If you want to use 1 option write 1 if 2 option write 2
+client -> 1
+server -> First option selected.
+client -> hello               from   [[[]]] client![
+server -> hello               from   ((())) client!(
+client -> quit

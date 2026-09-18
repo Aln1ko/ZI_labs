@@ -1,0 +1,22 @@
+{
+    "ADMIN": {
+        "password_hash": "5bce",
+        "is_blocked": false,
+        "must_change_password": false
+    },
+    "ABC": {
+        "password_hash": "b1fa",
+        "is_blocked": false,
+        "must_change_password": false
+    },
+    "kl": {
+        "password_hash": "a7ef",
+        "is_blocked": false,
+        "must_change_password": false
+    },
+    "us": {
+        "password_hash": "561f",
+        "is_blocked": false,
+        "must_change_password": true
+    }
+}

@@ -1,0 +1,13 @@
+Server started. Waiting for clients...
+client -> DISCOVER
+server -> RESPONSE
+server -> TCP connection from ('192.168.56.1', 2584)
+server -> Before start you need to authenticate, please enter your username
+client -> ADMIN
+server -> OK. 
+Please enter your password
+client -> 123
+server -> Authentication successful.
+Enter message to send or quit to exit or help for assistance
+client -> quit
+server -> Goodbye!
