@@ -1,0 +1,744 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    192.168.56.101        255.255.255.255       UDP      50     49152 → 7700 Len=8
+
+Frame 1: Packet, 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 255.255.255.255
+User Datagram Protocol, Src Port: 49152, Dst Port: 7700
+Data (8 bytes)
+
+0000  44 49 53 43 4f 56 45 52                           DISCOVER
+    Data: 444953434f564552
+    [Length: 8]
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000803100    192.168.56.1          192.168.56.101        UDP      50     7700 → 49152 Len=8
+
+Frame 2: Packet, 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+User Datagram Protocol, Src Port: 7700, Dst Port: 49152
+Data (8 bytes)
+
+0000  52 45 53 50 4f 4e 53 45                           RESPONSE
+    Data: 524553504f4e5345
+    [Length: 8]
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.002770400    192.168.56.101        192.168.56.1          TCP      66     49697 → 7700 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+
+Frame 3: Packet, 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 0, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 1]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 0    (relative sequence number)
+    Sequence Number (raw): 1923887066
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 0
+    Acknowledgment number (raw): 0
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x002 (SYN)
+    Window: 64240
+    [Calculated window size: 64240]
+    Checksum: 0xffab [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [Timestamps]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.002888100    192.168.56.1          192.168.56.101        TCP      66     7700 → 49697 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+
+Frame 4: Packet, 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 0, Ack: 1, Len: 0
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 2]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 0    (relative sequence number)
+    Sequence Number (raw): 4281484181
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1923887067
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+    Window: 65535
+    [Calculated window size: 65535]
+    Checksum: 0xb7c3 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.003446100    192.168.56.101        192.168.56.1          TCP      54     49697 → 7700 [ACK] Seq=1 Ack=1 Win=2102272 Len=0
+
+Frame 5: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 1, Ack: 1, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 3]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1923887067
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 4281484182
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 8212
+    [Calculated window size: 2102272]
+    [Window size scaling factor: 256]
+    Checksum: 0xd882 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.004055600    192.168.56.1          192.168.56.101        TCP      61     7700 → 49697 [PSH, ACK] Seq=1 Ack=1 Win=65280 Len=7
+
+Frame 6: Packet, 61 bytes on wire (488 bits), 61 bytes captured (488 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 1, Ack: 1, Len: 7
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 4]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 7]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 4281484182
+    [Next Sequence Number: 8    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1923887067
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x1de9 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (7 bytes)
+Data (7 bytes)
+
+0000  31 35 35 39 3a 31 39                              1559:19
+    Data: 313535393a3139
+    [Length: 7]
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.004605500    192.168.56.101        192.168.56.1          TCP      57     49697 → 7700 [PSH, ACK] Seq=1 Ack=8 Win=2102272 Len=3
+
+Frame 7: Packet, 57 bytes on wire (456 bits), 57 bytes captured (456 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 1, Ack: 8, Len: 3
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 5]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 3]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1923887067
+    [Next Sequence Number: 4    (relative sequence number)]
+    Acknowledgment Number: 8    (relative ack number)
+    Acknowledgment number (raw): 4281484189
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 8212
+    [Calculated window size: 2102272]
+    [Window size scaling factor: 256]
+    Checksum: 0x763b [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (3 bytes)
+Data (3 bytes)
+
+0000  32 35 30                                          250
+    Data: 323530
+    [Length: 3]
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.004706100    192.168.56.1          192.168.56.101        TCP      57     7700 → 49697 [PSH, ACK] Seq=8 Ack=4 Win=65280 Len=3
+
+Frame 8: Packet, 57 bytes on wire (456 bits), 57 bytes captured (456 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 8, Ack: 4, Len: 3
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 6]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 3]
+    Sequence Number: 8    (relative sequence number)
+    Sequence Number (raw): 4281484189
+    [Next Sequence Number: 11    (relative sequence number)]
+    Acknowledgment Number: 4    (relative ack number)
+    Acknowledgment number (raw): 1923887070
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x874b [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (3 bytes)
+Data (3 bytes)
+
+0000  37 37 39                                          779
+    Data: 373739
+    [Length: 3]
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.046437700    192.168.56.101        192.168.56.1          TCP      54     49697 → 7700 [ACK] Seq=4 Ack=11 Win=2102272 Len=0
+
+Frame 9: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 4, Ack: 11, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 7]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 4    (relative sequence number)
+    Sequence Number (raw): 1923887070
+    [Next Sequence Number: 4    (relative sequence number)]
+    Acknowledgment Number: 11    (relative ack number)
+    Acknowledgment number (raw): 4281484192
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 8212
+    [Calculated window size: 2102272]
+    [Window size scaling factor: 256]
+    Checksum: 0xd875 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.046477100    192.168.56.1          192.168.56.101        TCP      121    7700 → 49697 [PSH, ACK] Seq=11 Ack=4 Win=65280 Len=67
+
+Frame 10: Packet, 121 bytes on wire (968 bits), 121 bytes captured (968 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 11, Ack: 4, Len: 67
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 8]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 67]
+    Sequence Number: 11    (relative sequence number)
+    Sequence Number (raw): 4281484192
+    [Next Sequence Number: 78    (relative sequence number)]
+    Acknowledgment Number: 4    (relative ack number)
+    Acknowledgment number (raw): 1923887070
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0xdbf4 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (67 bytes)
+Data (67 bytes)
+
+0000  1c 73 b1 94 95 8e a1 94 cf a2 a3 90 a1 a3 cf 98   .s..............
+0010  8e a4 cf 8d 94 94 93 cf a3 8e cf 90 a4 a3 87 94   ................
+0020  8d a3 88 92 90 a3 94 cb cf 9f 8b 94 90 a2 94 cf   ................
+0030  94 8d a3 94 a1 cf 98 8e a4 a1 cf a4 a2 94 a1 8d   ................
+0040  90 8c 94                                          ...
+    Data: 1c73b194958ea194cfa2a390a1a3cf988ea4cf8d949493cfa38ecf90a4a387948da3889290a394cbcf9f8b9490a294cf948da394a1cf988ea4a1cfa4a294a18d908c94
+    [Length: 67]
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.090061400    192.168.56.101        192.168.56.1          TCP      54     49697 → 7700 [ACK] Seq=4 Ack=78 Win=2102272 Len=0
+
+Frame 11: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 4, Ack: 78, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 9]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 4    (relative sequence number)
+    Sequence Number (raw): 1923887070
+    [Next Sequence Number: 4    (relative sequence number)]
+    Acknowledgment Number: 78    (relative ack number)
+    Acknowledgment number (raw): 4281484259
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 8212
+    [Calculated window size: 2102272]
+    [Window size scaling factor: 256]
+    Checksum: 0xd832 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 2.288298600    192.168.56.101        192.168.56.1          TCP      58     49697 → 7700 [PSH, ACK] Seq=4 Ack=78 Win=2102272 Len=4
+
+Frame 12: Packet, 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 4, Ack: 78, Len: 4
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 10]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 4]
+    Sequence Number: 4    (relative sequence number)
+    Sequence Number (raw): 1923887070
+    [Next Sequence Number: 8    (relative sequence number)]
+    Acknowledgment Number: 78    (relative ack number)
+    Acknowledgment number (raw): 4281484259
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 8212
+    [Calculated window size: 2102272]
+    [Window size scaling factor: 256]
+    Checksum: 0xe5a5 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (4 bytes)
+Data (4 bytes)
+
+0000  67 f5 8a 8b                                       g...
+    Data: 67f58a8b
+    [Length: 4]
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 2.288864200    192.168.56.1          192.168.56.101        TCP      87     7700 → 49697 [PSH, ACK] Seq=78 Ack=8 Win=65280 Len=33
+
+Frame 13: Packet, 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 78, Ack: 8, Len: 33
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 11]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 33]
+    Sequence Number: 78    (relative sequence number)
+    Sequence Number (raw): 4281484259
+    [Next Sequence Number: 111    (relative sequence number)]
+    Acknowledgment Number: 8    (relative ack number)
+    Acknowledgment number (raw): 1923887074
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x372c [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (33 bytes)
+Data (33 bytes)
+
+0000  6d 00 ae aa cd cf e9 bf 8b 94 90 a2 94 cf 94 8d   m...............
+0010  a3 94 a1 cf 98 8e a4 a1 cf 9f 90 a2 a2 a6 8e a1   ................
+0020  93                                                .
+    Data: 6d00aeaacdcfe9bf8b9490a294cf948da394a1cf988ea4a1cf9f90a2a2a68ea193
+    [Length: 33]
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 2.331685800    192.168.56.101        192.168.56.1          TCP      54     49697 → 7700 [ACK] Seq=8 Ack=111 Win=2102272 Len=0
+
+Frame 14: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 8, Ack: 111, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 12]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 8    (relative sequence number)
+    Sequence Number (raw): 1923887074
+    [Next Sequence Number: 8    (relative sequence number)]
+    Acknowledgment Number: 111    (relative ack number)
+    Acknowledgment number (raw): 4281484292
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 8212
+    [Calculated window size: 2102272]
+    [Window size scaling factor: 256]
+    Checksum: 0xd80d [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 4.409028800    192.168.56.101        192.168.56.1          TCP      59     49697 → 7700 [PSH, ACK] Seq=8 Ack=111 Win=2102272 Len=5
+
+Frame 15: Packet, 59 bytes on wire (472 bits), 59 bytes captured (472 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 8, Ack: 111, Len: 5
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 13]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 5]
+    Sequence Number: 8    (relative sequence number)
+    Sequence Number (raw): 1923887074
+    [Next Sequence Number: 13    (relative sequence number)]
+    Acknowledgment Number: 111    (relative ack number)
+    Acknowledgment number (raw): 4281484292
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 8212
+    [Calculated window size: 2102272]
+    [Window size scaling factor: 256]
+    Checksum: 0x7138 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (5 bytes)
+Data (5 bytes)
+
+0000  a7 ef e6 d7 d8                                    .....
+    Data: a7efe6d7d8
+    [Length: 5]
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 4.409573400    192.168.56.1          192.168.56.101        TCP      143    7700 → 49697 [PSH, ACK] Seq=111 Ack=13 Win=65280 Len=89
+
+Frame 16: Packet, 143 bytes on wire (1144 bits), 143 bytes captured (1144 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 111, Ack: 13, Len: 89
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 14]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 89]
+    Sequence Number: 111    (relative sequence number)
+    Sequence Number (raw): 4281484292
+    [Next Sequence Number: 200    (relative sequence number)]
+    Acknowledgment Number: 13    (relative ack number)
+    Acknowledgment number (raw): 1923887079
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x74a9 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (89 bytes)
+Data (89 bytes)
+
+0000  75 48 b0 a4 a3 87 94 8d a3 88 92 90 a3 88 8e 8d   uH..............
+0010  cf a2 a4 92 92 94 a2 a2 95 a4 8b cd e9 b4 8d a3   ................
+0020  94 a1 cf 8c 94 a2 a2 90 96 94 cf a3 8e cf a2 94   ................
+0030  8d 93 cf 8e a1 cf a0 a4 88 a3 cf a3 8e cf 94 97   ................
+0040  88 a3 cf 8e a1 cf 87 94 8b 9f cf 95 8e a1 cf 90   ................
+0050  a2 a2 88 a2 a3 90 8d 92 94                        .........
+    Data: 7548b0a4a387948da3889290a3888e8dcfa2a4929294a2a295a48bcde9b48da394a1cf8c94a2a2909694cfa38ecfa2948d93cf8ea1cfa0a488a3cfa38ecf949788a3cf8ea1cf87948b9fcf958ea1cf90a2a288a2a3908d9294
+    [Length: 89]
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 4.457963000    192.168.56.101        192.168.56.1          TCP      54     49697 → 7700 [ACK] Seq=13 Ack=200 Win=2102016 Len=0
+
+Frame 17: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 13, Ack: 200, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 15]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 13    (relative sequence number)
+    Sequence Number (raw): 1923887079
+    [Next Sequence Number: 13    (relative sequence number)]
+    Acknowledgment Number: 200    (relative ack number)
+    Acknowledgment number (raw): 4281484381
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 8211
+    [Calculated window size: 2102016]
+    [Window size scaling factor: 256]
+    Checksum: 0xd7b0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 7.120700400    192.168.56.101        192.168.56.1          TCP      60     49697 → 7700 [PSH, ACK] Seq=13 Ack=200 Win=2102016 Len=6
+
+Frame 18: Packet, 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 13, Ack: 200, Len: 6
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 16]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 6]
+    Sequence Number: 13    (relative sequence number)
+    Sequence Number (raw): 1923887079
+    [Next Sequence Number: 19    (relative sequence number)]
+    Acknowledgment Number: 200    (relative ack number)
+    Acknowledgment number (raw): 4281484381
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 8211
+    [Calculated window size: 2102016]
+    [Window size scaling factor: 256]
+    Checksum: 0xa202 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (6 bytes)
+Data (6 bytes)
+
+0000  0c 58 a0 a4 88 a3                                 .X....
+    Data: 0c58a0a488a3
+    [Length: 6]
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 7.121247200    192.168.56.1          192.168.56.101        TCP      64     7700 → 49697 [PSH, ACK] Seq=200 Ack=19 Win=65280 Len=10
+
+Frame 19: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 200, Ack: 19, Len: 10
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 17]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 10]
+    Sequence Number: 200    (relative sequence number)
+    Sequence Number (raw): 4281484381
+    [Next Sequence Number: 210    (relative sequence number)]
+    Acknowledgment Number: 19    (relative ack number)
+    Acknowledgment number (raw): 1923887085
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x89a6 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (10 bytes)
+Data (10 bytes)
+
+0000  01 7b b6 8e 8e 93 91 98 94 d0                     .{........
+    Data: 017bb68e8e93919894d0
+    [Length: 10]
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 7.121528100    192.168.56.1          192.168.56.101        TCP      54     7700 → 49697 [FIN, ACK] Seq=210 Ack=19 Win=65280 Len=0
+
+Frame 20: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 210, Ack: 19, Len: 0
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 18]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 210    (relative sequence number)
+    Sequence Number (raw): 4281484391
+    [Next Sequence Number: 211    (relative sequence number)]
+    Acknowledgment Number: 19    (relative ack number)
+    Acknowledgment number (raw): 1923887085
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0xf6b3 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 7.121724000    192.168.56.101        192.168.56.1          TCP      54     49697 → 7700 [ACK] Seq=19 Ack=211 Win=2102016 Len=0
+
+Frame 21: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 19, Ack: 211, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 19]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 19    (relative sequence number)
+    Sequence Number (raw): 1923887085
+    [Next Sequence Number: 19    (relative sequence number)]
+    Acknowledgment Number: 211    (relative ack number)
+    Acknowledgment number (raw): 4281484392
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 8211
+    [Calculated window size: 2102016]
+    [Window size scaling factor: 256]
+    Checksum: 0xd79f [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 7.122526700    192.168.56.101        192.168.56.1          TCP      54     49697 → 7700 [FIN, ACK] Seq=19 Ack=211 Win=2102016 Len=0
+
+Frame 22: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5), Dst: 0a:00:27:00:00:08 (0a:00:27:00:00:08)
+Internet Protocol Version 4, Src: 192.168.56.101, Dst: 192.168.56.1
+Transmission Control Protocol, Src Port: 49697, Dst Port: 7700, Seq: 19, Ack: 211, Len: 0
+    Source Port: 49697
+    Destination Port: 7700
+    [Stream index: 0]
+    [Stream Packet Number: 20]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 19    (relative sequence number)
+    Sequence Number (raw): 1923887085
+    [Next Sequence Number: 20    (relative sequence number)]
+    Acknowledgment Number: 211    (relative ack number)
+    Acknowledgment number (raw): 4281484392
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+    Window: 8211
+    [Calculated window size: 2102016]
+    [Window size scaling factor: 256]
+    Checksum: 0xd79e [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 7.122569300    192.168.56.1          192.168.56.101        TCP      54     7700 → 49697 [ACK] Seq=211 Ack=20 Win=65280 Len=0
+
+Frame 23: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{62C22CDC-9BCF-46D3-8A08-B79F97D97040}, id 0
+Ethernet II, Src: 0a:00:27:00:00:08 (0a:00:27:00:00:08), Dst: PCSSystemtec_17:2c:a5 (08:00:27:17:2c:a5)
+Internet Protocol Version 4, Src: 192.168.56.1, Dst: 192.168.56.101
+Transmission Control Protocol, Src Port: 7700, Dst Port: 49697, Seq: 211, Ack: 20, Len: 0
+    Source Port: 7700
+    Destination Port: 49697
+    [Stream index: 0]
+    [Stream Packet Number: 21]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 211    (relative sequence number)
+    Sequence Number (raw): 4281484392
+    [Next Sequence Number: 211    (relative sequence number)]
+    Acknowledgment Number: 20    (relative ack number)
+    Acknowledgment number (raw): 1923887086
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0xf6b2 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
